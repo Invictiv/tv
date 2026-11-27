@@ -1,0 +1,32 @@
+# Что отключать на телевизоре. Отключение обратимо (restore-tv).
+# Пакеты, которых на вашем ТВ нет, просто пропускаются.
+# Чтобы что-то НЕ трогать — поставьте # в начале строки.
+
+[launcher]
+# Стандартные главные экраны. Отключаются, ТОЛЬКО если Lite TV установился.
+com.google.android.apps.tv.launcherx        # Google TV: главный экран (самый тяжёлый)
+com.google.android.tungsten.setupwraith     # Google TV: перехватывает «Домой», если главный отключён
+com.google.android.tvlauncher               # Android TV: главный экран
+com.google.android.leanbacklauncher         # старый Android TV: главный экран
+
+[safe]
+# Фоновые службы и приложения, которые не нужны для просмотра.
+com.google.android.leanbacklauncher.recommendations  # служба рекомендаций (постоянно в фоне)
+com.google.android.tvtutorials              # обучающие подсказки
+com.google.android.feedback                 # отправка отзывов в Google
+com.google.android.play.games               # Play Игры
+com.google.android.videos                   # Play Фильмы / «Google TV» (покупки в РФ не работают)
+com.google.android.music                    # Play Музыка (сервис закрыт)
+com.android.printspooler                    # печать
+com.android.dreams.phototable               # заставка «Фоторамка»
+
+[full]
+# Только в режиме «максимум». Может пригодиться — решайте сами.
+com.google.android.apps.mediashell          # Chromecast: трансляция с телефона на ТВ
+com.google.android.katniss                  # Голосовой поиск Google (кнопка микрофона)
+com.google.android.speech.pumpkin           # Офлайн-распознавание речи
+com.google.android.backdrop                 # Заставка Ambient (на OLED лучше оставить заставку!)
+com.google.android.apps.tv.dreamx           # Заставка Google TV
+com.google.android.tvrecommendations        # Android TV Core Services: каналы и рекомендации
+com.netflix.ninja                           # Netflix (в РФ не работает без VPN)
+com.amazon.amazonvideo.livingroom           # Prime Video
